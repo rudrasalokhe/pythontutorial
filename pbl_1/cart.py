@@ -20,8 +20,8 @@ class Cart:
             self.total -= product.price * quantity
         else:
             print(f"Cannot remove {quantity} of {product.name}")
-            
+
     def view_cart(self):
         for product, quantity in self.items.items():
-            print(f"{product.name} x {quantity} = ${product.price * quantity}")
+            print(f"{product.name} x {quantity} = ₹{product.price * quantity}")
         print(f"Total: ${self.total}")
